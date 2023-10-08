@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "A Fairytale Wedding Experience",
+    "img": "https://i.ibb.co/r2dKJMF/wedding.jpg",
+    "description": "Wedding planning and coordination, which may include venue selection, catering, decorations, entertainment, and more.",
+    "lg_description": "A detailed description of our first product, highlighting its features and benefits. This is a high-quality item perfect for your needs.",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "title": "Celebrate Life's Milestones",
+    "img": "https://i.ibb.co/SVmTDKG/birthday.jpg",
+    "description": "Organizing birthday celebrations for all ages, from children's parties to milestone adult birthdays.",
+    "lg_description": "Get to know the second product inside and out with this comprehensive description. It's designed to meet your expectations with style and functionality.",
+    "price": 29.99
+  },
+  {
+    "id": 3,
+    "title": "Celebrate Years of Togetherness",
+    "img": "https://i.ibb.co/y8TmFrs/anniversaries-Party.jpg",
+    "description": "Planning and managing anniversary parties and vow renewal ceremonies.",
+    "lg_description": "Discover the uniqueness of our third product through this extensive description. It stands out with its innovative features and design.",
+    "price": 14.99
+  },
+  {
+    "id": 4,
+    "title": "An Engagement to Remember",
+    "img": "https://i.ibb.co/px7ht6x/Engagement-Parties.webp",
+    "description": "Coordinating events to celebrate the engagement of a couple.",
+    "lg_description": "Unveil the quality and excellence of our fourth product. It's a premium item crafted to exceed your expectations and provide exceptional value.",
+    "price": 49.99
+  },
+  {
+    "id": 5,
+    "title": "Your Lifelong Achievements Honored",
+    "img": "https://i.ibb.co/nDVhh6x/retirement-parties.png",
+    "description": "Planning retirement celebrations for individuals leaving the workforce.",
+    "lg_description": "Explore the stylish and practical aspects of our fifth product with this detailed description. It's designed to enhance your lifestyle with elegance and functionality.",
+    "price": 39.99
+  },
+  {
+    "id": 6,
+    "title": "Your Baby Shower Spectacular",
+    "img": "https://i.ibb.co/5Fm1KgM/baby-shower.jpg",
+    "description": "Organizing baby showers to celebrate expectant parents.",
+    "lg_description": "Learn more about the versatility and utility of our sixth product through this in-depth description. It's the ideal choice for your everyday needs.",
+    "price": 24.99
+  }
+]
