@@ -1,15 +1,41 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../shared/Navbar/Navbar";
+import { useContext, useState } from "react";
+import swal from "sweetalert";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AuthContext } from "../../provider/AuthProvider/AuthProvider";
 
 const Login = () => {
+  const { showPassword, setShowPassword, userSignIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setSuccess("");
+    setError("");
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    userSignIn(email, password)
+      .then(() => {
+        e.target.reset();
+        swal("Login successfull.", {
+          button: false,
+        });
+        navigate("/");
+      })
+      .catch((error) => {
+        swal(error.message, {
+          button: false,
+        });
+      });
+  };
   return (
     <div>
       <Navbar />
-      <div className="py-6 lg:bg-[#F3F3F3]">
-        <div className="max-w-[1400px] mx-auto">
-          <Navbar></Navbar>
-        </div>
-
+      <div className="py-6 px-5 md:px-0 lg:bg-[#F3F3F3]">
+        <div className="max-w-[1400px] mx-auto"></div>
         <div className="min-h-[87vh] hero ">
           <div className=" w-full max-w-[500px] md:px-6 card rounded lg:bg-base-100 bg-[#F3F3F3]">
             <h3 className="text-[#403F3F] text-3xl font-semibold text-center pt-10">
@@ -51,21 +77,9 @@ const Login = () => {
               </div>
               {success && <p className="text-sm text-gray-700">{success}</p>}
               {error && <p className="text-sm text-red-700">{error}</p>}
-              <div className="flex justify-between w-full gap-24 mt-2">
-                <div className="flex gap-2">
-                  <input type="checkbox" name="" id="" />
-                  <label htmlFor="RememberMe">Remember me</label>
-                </div>
-                <p
-                  onClick={handleResetPassword}
-                  className="text-blue-600 transition-transform delay-1000 hover:underline"
-                >
-                  Forget password?
-                </p>
-              </div>
 
               <div className="mt-2 form-control">
-                <button className="text-white btn bg-[#403F3F] hover:bg-[#403F4F]">
+                <button className="text-white btn bg-pink-500 hover:bg-pink-600">
                   Login
                 </button>
               </div>
@@ -73,7 +87,7 @@ const Login = () => {
                 {`Don't have any account? `}
                 <Link
                   to={"/register"}
-                  className="text-blue-600 hover:underline"
+                  className="text-pink-600 hover:underline"
                 >
                   Register
                 </Link>

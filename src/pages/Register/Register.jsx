@@ -1,16 +1,22 @@
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AiFillEyeInvisible, AiFillEye, AiOutlineGoogle } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../shared/Navbar/Navbar";
 import { useContext, useState } from "react";
 import swal from "sweetalert";
 import { AuthContext } from "../../provider/AuthProvider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const [showPassword, setShowPassword] = useState(false);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const { createUser } = useContext(AuthContext);
+  const {
+    createUser,
+    showPassword,
+    setShowPassword,
+    signInWithGoogle,
+    // updateUserProfile,
+  } = useContext(AuthContext);
   const handleRegistation = (e) => {
     e.preventDefault();
     setSuccess("");
@@ -44,10 +50,11 @@ const Register = () => {
     }
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        setSuccess("Login successfull.");
+        // console.log(result.user);
+        updateProfile(result.user, { displayName: name, photoURL: photoURL });
+        setSuccess("Registation successfull.");
         e.target.reset();
-        swal("Login successfull.", {
+        swal("Registation successfull.", {
           button: false,
         });
         navigate("/");
@@ -56,10 +63,24 @@ const Register = () => {
         setError(error.message);
       });
   };
+  const handleGoogleLogin = () => {
+    signInWithGoogle()
+      .then(() => {
+        swal("Login successfull.", {
+          button: false,
+        });
+        navigate("/");
+      })
+      .catch((error) => {
+        swal(error.message, {
+          button: false,
+        });
+      });
+  };
   return (
     <div>
       <Navbar></Navbar>
-      <div className="py-6 lg:bg-[#F3F3F3] px-5 md:px-0">
+      <div className="py-6 lg:bg-[#F3F3F3] px-5 md:px-0 font-work-sans">
         <div className="max-w-[1400px] mx-auto"></div>
         <div className="min-h-[87vh] hero ">
           <div className=" w-full max-w-[500px] md:px-6 card rounded lg:bg-base-100 bg-[#F3F3F3]">
@@ -146,6 +167,11 @@ const Register = () => {
                   Register
                 </button>
               </div>
+              <p className="text-center font-medium">or</p>
+              <a onClick={handleGoogleLogin} className="btn">
+                <AiOutlineGoogle className=" text-4xl mx-auto text-blue-600" />
+              </a>
+
               <p className="my-3 text-center">
                 Already have an account?{" "}
                 <Link to={"/login"} className="text-pink-600 hover:underline">

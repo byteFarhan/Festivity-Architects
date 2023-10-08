@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
+import Hero from "../../shared/Hero/Hero";
 
 const ProductDetailes = () => {
   const products = useLoaderData();
@@ -17,7 +18,8 @@ const ProductDetailes = () => {
   return (
     <div>
       <Navbar />
-      <div className="h-[60vh]"></div>
+      <Hero />
+      {/* <div className="h-[60vh]"></div> */}
       <Footer />
     </div>
   );

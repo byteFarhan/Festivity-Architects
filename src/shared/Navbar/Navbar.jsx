@@ -1,6 +1,27 @@
 import { Link, NavLink } from "react-router-dom";
+import defaultUserProfile from "../../assets/imgs/user.png";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider/AuthProvider";
+import swal from "sweetalert";
 
 const Navbar = () => {
+  const { user, userLogout } = useContext(AuthContext);
+  // const userName = user.displayName;
+  // const userImg = user.photoURL;
+  // console.log(userName, userImg);
+  const handleLogout = () => {
+    userLogout()
+      .then(() => {
+        swal("Logout successfull.", {
+          button: false,
+        });
+      })
+      .catch((error) => {
+        swal(error.message, {
+          button: false,
+        });
+      });
+  };
   const navLink = (
     <>
       <li>
@@ -18,7 +39,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 py-2">
       <div className="navbar max-w-[1400px] mx-auto ">
         <div className="navbar-start flex-1 ">
           <div className="dropdown">
@@ -52,10 +73,24 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
+        <img
+          src={user ? user?.photoURL : defaultUserProfile}
+          alt="User"
+          className={`h-12 w-12 rounded-full mx-5 ${
+            user && "border-2 border-pink-500"
+          } `}
+          title={user?.displayName}
+        />
         <div className="">
-          <Link to={"/login"} className="btn">
-            Login
-          </Link>
+          {user ? (
+            <button onClick={handleLogout} className="btn">
+              Logout
+            </button>
+          ) : (
+            <Link to={"/login"} className="btn">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>
