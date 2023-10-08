@@ -5,8 +5,6 @@ const Card = ({ data }) => {
   return (
     <>
       <div className="  flex font-work-sans flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow-md">
-        {/* <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40"> */}
-
         <img
           src={img}
           alt="img-blur-shadow"
@@ -21,9 +19,9 @@ const Card = ({ data }) => {
           </p>
         </div>
         <div className="p-6 pt-0">
-          <Link to={`/product/${id}`}>
+          <Link to={`/detailes/${id}`}>
             <button
-              className="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="select-none rounded-lg bg-[#ec4899] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
               data-ripple-light="true"
             >

@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Card from "../../Card/Card";
+import Card from "../Card/Card";
 
 const Cards = () => {
   const datas = useLoaderData();

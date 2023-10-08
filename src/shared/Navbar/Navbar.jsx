@@ -18,8 +18,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar max-w-[1400px] mx-auto bg-base-100">
+    <div className="bg-base-100">
+      <div className="navbar max-w-[1400px] mx-auto ">
         <div className="navbar-start flex-1 ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,7 +45,7 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <h1 className="md:text-3xl text-xl font-semibold ">
+          <h1 className="md:text-3xl text-xl text-pink-500 font-semibold font-playfair lg:font-bold ">
             Festivity Architects
           </h1>
         </div>
