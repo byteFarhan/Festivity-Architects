@@ -28,26 +28,31 @@ const SentProposal = () => {
               type="text"
               placeholder="Name(required)*"
               className=" border border-black bg-slate-100 outline-none rounded p-2  text-black "
+              required
             />
             <input
               type="email"
               placeholder="Email address(required)*"
               className=" border border-black bg-slate-100 outline-none rounded p-2  text-black "
+              required
             />
             <input
               type="text"
               placeholder="Phone Number(required)*"
               className=" border border-black bg-slate-100 outline-none rounded p-2  text-black "
+              required
             />
             <input
               type="text"
               placeholder="Event Dates(required)*"
               className=" border border-black bg-slate-100 outline-none rounded p-2  text-black "
+              required
             />
             <input
               type="text"
               placeholder="Place(required)*"
               className=" border border-black bg-slate-100 outline-none rounded p-2  text-black "
+              required
             />
             <textarea
               name=""
