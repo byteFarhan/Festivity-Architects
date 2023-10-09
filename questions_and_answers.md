@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>We already know that if we declare an variable with let or var keyword and we don't asign any value for this variable JavaScript dos't give any error.In this question above variable greeting has been declared without any value then next line assign an empty object as variable value. That's why the correct answer will be option 'A'</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: "12"
 
-<i>Write your explanation here</i>
+<i>In JavaScript if we sum an number with an string javascript will convert the result as an string. In the question above was called the sum function and give 2 values as parameter. But parameter two was an string that's why the answer will option "C: "12" "</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: "A: `['🍕', '🍫', '🥑', '🍔']`"
 
-<i>Write your explanation here</i>
+<i>In the question above a food variable is created as an array, and then an object info is created with a property favoriteFood set to the first element of the food array, which is "🍕". The subsequent line where info.favoriteFood is assigned a new value "🍝" does't modify the food array. It remains unchanged, and that's why the answer will be option "A": ["🍕", "🍫", "🥑", "🍔"]</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>In javascript if we call any function which is accept argument and we called it without any argument then if the function argument don't have any default value it will consider as "undefined". That's why the answer will be option "B"</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>In the question above array.forEach method has been applyed on nums array. In the forEach method has been given a condition also, so when num value will true only then count variable value will be increase . The nums array have 4 element but first element is 0 which is an falsy value so we can say the count variable will increase only 3 times. That's why the answer will be option "C </i>
 
 </p>
 </details>

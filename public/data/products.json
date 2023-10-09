@@ -4,47 +4,119 @@
     "title": "A Fairytale Wedding Experience",
     "img": "https://i.ibb.co/r2dKJMF/wedding.jpg",
     "description": "Wedding planning and coordination, which may include venue selection, catering, decorations, entertainment, and more.",
-    "lg_description": "A detailed description of our first product, highlighting its features and benefits. This is a high-quality item perfect for your needs.",
-    "price": 19.99
+    "product_detailes": {
+      "product_title": "Your Dream Wedding Brought to Life",
+      "services": [
+        "Venue Selection: We help you choose the ideal location that sets the stage for your love story.",
+        "Design and Decor: Our creative experts transform your vision into stunning reality with breathtaking decor.",
+        "Catering: Exquisite menus tailored to your taste and dietary preferences.",
+        "Entertainment: Live bands, DJs, and performers to keep the party going.",
+        "Photography and Videography: Capture every precious moment with skilled professionals.",
+        "Coordination: A dedicated coordinator ensures every detail runs smoothly.",
+        "Customized Packages: Tailored to fit your style, budget, and guest list."
+      ],
+      "lg_description": "Our Wedding Planning Package is designed to make your special day a stress-free and memorable experience. We offer a comprehensive range of services, including venue selection, catering, floral arrangements, entertainment, photography, and coordination, ensuring every detail is perfect for your dream wedding.",
+      "finishing_description": "With our passion for perfection and attention to detail, your wedding day will be an unforgettable experience filled with love, laughter, and cherished memories."
+    },
+    "price": 23000
   },
   {
     "id": 2,
     "title": "Celebrate Life's Milestones",
     "img": "https://i.ibb.co/SVmTDKG/birthday.jpg",
     "description": "Organizing birthday celebrations for all ages, from children's parties to milestone adult birthdays.",
-    "lg_description": "Get to know the second product inside and out with this comprehensive description. It's designed to meet your expectations with style and functionality.",
-    "price": 29.99
+    "product_detailes": {
+      "product_title": "Celebrate Life's Milestones with Style",
+      "services": [
+        "Themed Decor: Transform your chosen theme into a visually stunning reality.",
+        "Entertainment: From magicians to clowns, we've got entertainment options for all ages.",
+        "Cake and Catering: Delectable treats and catering to suit your party's style.",
+        "Games and Activities: Fun-filled games and activities for kids and adults alike.",
+        "Photography: Capture the smiles and laughter with professional photographers.",
+        "Custom Invitations: Unique invitations that set the tone for your celebration.",
+        "Coordination: We handle the logistics, so you can enjoy the party stress-free."
+      ],
+      "lg_description": "When it comes to birthday parties, there's no one-size-fits-all solution. Whether you're celebrating a child's first birthday or a milestone year, Festivity Architects is here to create magic. We offer a range of services to make every birthday memorable.",
+      "finishing_description": "No matter the age or theme, we'll turn your birthday celebration into a joyous, unforgettable event."
+    },
+    "price": 12000
   },
   {
     "id": 3,
     "title": "Celebrate Years of Togetherness",
     "img": "https://i.ibb.co/y8TmFrs/anniversaries-Party.jpg",
     "description": "Planning and managing anniversary parties and vow renewal ceremonies.",
-    "lg_description": "Discover the uniqueness of our third product through this extensive description. It stands out with its innovative features and design.",
-    "price": 14.99
+    "product_detailes": {
+      "product_title": "Celebrating Years of Love and Togetherness",
+      "services": [
+        "Romantic Settings: Create a dreamy ambiance that reflects your love journey.",
+        "Entertainment: Choose from live music, romantic ballads, or other entertainment options.",
+        "Fine Dining: Crafted menus for a romantic dinner or grand celebration.",
+        "Floral Arrangements: Stunning floral arrangements to add a touch of elegance.",
+        "Photography: Capture the love and emotion of the day with professional photographers.",
+        "Coordination: Relax and enjoy the celebration while we take care of the details."
+      ],
+      "lg_description": "Anniversaries are milestones in your love story, and at Festivity Architects, we're here to help you celebrate in style. Whether it's your first or fiftieth anniversary, we offer a range of services to make your celebration unforgettable:",
+      "finishing_description": "We're dedicated to turning your anniversary into a memorable and romantic event that celebrates your journey together."
+    },
+    "price": 12000
   },
   {
     "id": 4,
     "title": "An Engagement to Remember",
     "img": "https://i.ibb.co/px7ht6x/Engagement-Parties.webp",
     "description": "Coordinating events to celebrate the engagement of a couple.",
-    "lg_description": "Unveil the quality and excellence of our fourth product. It's a premium item crafted to exceed your expectations and provide exceptional value.",
-    "price": 49.99
+    "product_detailes": {
+      "product_title": "Embarking on a New Journey Together",
+      "services": [
+        "Engagement Party Themes: Choose a theme that reflects your love story.",
+        "Invitations: Customized invitations to set the tone for the occasion.",
+        "Decor and Ambiance: Create a romantic atmosphere that reflects your love.",
+        "Catering: Delicious food and beverages to keep your guests satisfied.",
+        "Entertainment: Music and entertainment to keep the celebration lively.",
+        "Photography: Capture the love and excitement of your engagement party."
+      ],
+      "lg_description": "An engagement is a joyful milestone on the road to marriage, and Festivity Architects is here to help you celebrate it with style. Our services for engagement parties include:",
+      "finishing_description": "We understand the significance of this special day and will ensure your engagement party is a beautiful and joyful experience."
+    },
+    "price": 17000
   },
   {
     "id": 5,
     "title": "Your Lifelong Achievements Honored",
     "img": "https://i.ibb.co/nDVhh6x/retirement-parties.png",
     "description": "Planning retirement celebrations for individuals leaving the workforce.",
-    "lg_description": "Explore the stylish and practical aspects of our fifth product with this detailed description. It's designed to enhance your lifestyle with elegance and functionality.",
-    "price": 39.99
+    "product_detailes": {
+      "product_title": "Cheers to New Beginnings",
+      "services": [
+        "Venue Selection: Choose a location that suits your style and guest list.",
+        "Decor and Themes: Create a theme that reflects the retiree's interests and achievements",
+        "Catering: A delightful menu to please all palates.",
+        "Entertainment: Live music, speeches, and activities to celebrate the retiree.",
+        "Photography: Capture the heartfelt moments and memories."
+      ],
+      "lg_description": "Retirement is a well-deserved milestone, and Festivity Architects is here to help you celebrate it with style. Our retirement party services include:",
+      "finishing_description": "We understand the importance of celebrating a career's achievements, and we're dedicated to making your retirement party a memorable transition into new beginnings."
+    },
+    "price": 6000
   },
   {
     "id": 6,
     "title": "Your Baby Shower Spectacular",
     "img": "https://i.ibb.co/5Fm1KgM/baby-shower.jpg",
     "description": "Organizing baby showers to celebrate expectant parents.",
-    "lg_description": "Learn more about the versatility and utility of our sixth product through this in-depth description. It's the ideal choice for your everyday needs.",
+    "product_detailes": {
+      "product_title": "Welcoming New Life with Joy",
+      "services": [
+        "Themes and Decor: Create a charming and welcoming atmosphere.",
+        "Games and Activities: Fun and engaging games for all guests.",
+        "Catering: A delightful menu with options to suit all preferences.",
+        "Gifts and Favors: Personalized favors and gifts for your guests.",
+        "Photography: Capture the joy and excitement of the day."
+      ],
+      "lg_description": "A baby shower is a heartfelt celebration of new life, and Festivity Architects is here to make it extraordinary. Our services for baby showers include:",
+      "finishing_description": "We're dedicated to creating a heartwarming celebration that welcomes the arrival of a new member of the family."
+    },
     "price": 24.99
   }
 ]

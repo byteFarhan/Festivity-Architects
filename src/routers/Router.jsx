@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         // loader: () => fetch("./data/products.json"),
-        loader: () => fetch("./data/team.json"),
+        loader: () => fetch("/data/team.json"),
       },
       {
         path: "/login",
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
             <ProductDetailes />
           </PrivetRoute>
         ),
-        loader: () => fetch("./data/products.json"),
+        loader: () => fetch("/data/products.json"),
       },
       {
         path: "/sent-proposal",

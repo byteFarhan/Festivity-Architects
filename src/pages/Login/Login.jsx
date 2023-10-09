@@ -9,7 +9,7 @@ const Login = () => {
   const { showPassword, setShowPassword, userSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
   const handleLogin = (e) => {
@@ -25,6 +25,7 @@ const Login = () => {
         swal("Login successfull.", {
           button: false,
         });
+        e.target.reset();
         navigate(location.state ? location.state : "/");
       })
       .catch((error) => {
