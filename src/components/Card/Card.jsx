@@ -4,7 +4,7 @@ const Card = ({ data }) => {
   const { title, img, description, id } = data || {};
   return (
     <>
-      <div className="  flex font-work-sans flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="  flex font-work-sans flex-col rounded-md bg-pink-100 lg:bg-white lg:shadow-md bg-clip-border text-gray-700">
         <img
           src={img}
           alt="img-blur-shadow"

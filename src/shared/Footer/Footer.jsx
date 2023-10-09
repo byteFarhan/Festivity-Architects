@@ -9,6 +9,8 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
+  // const datas = useLoaderData();
+  // console.log("footer", datas);
   return (
     <footer className="bg-[#2a2a2a] text-white py-20">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-0">
@@ -23,7 +25,7 @@ const Footer = () => {
               <SiMinutemailer className="text-2xl lg:text-4xl" />
               <p className="font-medium">festivity@architects.com</p>
             </div>
-            <Link to={"/proposal"}>
+            <Link to={"/sent-proposal"}>
               <div className="flex md:-ml-10 flex-col items-center justify-center gap-2">
                 <AiOutlineLaptop className="text-2xl lg:text-4xl" />
                 <p className="font-medium">Request a proposal</p>
@@ -38,9 +40,9 @@ const Footer = () => {
 
           <ul className="flex gap-3 md:ml-4 mt-10 justify-center">
             <li className="bg-pink-500 text-white text-2xl p-3 font-semibold rounded-full">
-              <Link to={"/facebook.com"}>
+              <a href="#">
                 <FaFacebookF />
-              </Link>
+              </a>
             </li>
             <li className="bg-pink-500 text-white text-2xl p-3 font-semibold rounded-full">
               <Link to={"/instagram.com"}>

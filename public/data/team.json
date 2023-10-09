@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "position": "Event Planner",
+    "photoURL": "https://i.ibb.co/nr6vWnc/member1.png"
+  },
+  {
+    "id": 2,
+    "name": "Eva Davis",
+    "position": "Event Coordinator",
+    "photoURL": "https://i.ibb.co/b7hk6yj/member2.png"
+  },
+  {
+    "id": 3,
+    "name": "Bob Smith",
+    "position": "Marketing Manager",
+    "photoURL": "https://i.ibb.co/wpDpXQD/member3.png"
+  },
+  {
+    "id": 4,
+    "name": "Olivia Parker",
+    "position": "Account Manager",
+    "photoURL": "https://i.ibb.co/PZM4Cgt/member4.png"
+  }
+]

@@ -28,10 +28,10 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="about">Home2</NavLink>
+        <NavLink to="/sent-proposal">Sent proposal</NavLink>
       </li>
       <li>
-        <NavLink to="asdfg">Home3</NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
         <NavLink to="/register">Register</NavLink>
@@ -73,11 +73,16 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLink}</ul>
         </div>
+        {user && (
+          <p className="hidden md:block font-medium font-work-sans">
+            {user?.displayName}
+          </p>
+        )}
         <img
-          src={user ? user?.photoURL : defaultUserProfile}
+          src={user?.photoURL ? user?.photoURL : defaultUserProfile}
           alt="User"
           className={`h-12 w-12 rounded-full mx-5 ${
-            user && "border-2 border-pink-500"
+            user?.photoURL && "border-2 border-pink-500"
           } `}
           title={user?.displayName}
         />

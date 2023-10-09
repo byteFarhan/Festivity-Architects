@@ -5,6 +5,9 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ProductDetailes from "../pages/ProductDetailes/ProductDetailes";
+import PrivetRoute from "./PrivetRoute/PrivetRoute";
+import SentProposal from "../pages/SentProposal/SentProposal";
+import About from "../pages/About/About";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +17,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("./data.json"),
+        // loader: () => fetch("./data/products.json"),
+        loader: () => fetch("./data/team.json"),
       },
       {
         path: "/login",
@@ -26,8 +30,28 @@ const router = createBrowserRouter([
       },
       {
         path: "/detailes/:id",
-        element: <ProductDetailes />,
-        loader: () => fetch("/data.json"),
+        element: (
+          <PrivetRoute>
+            <ProductDetailes />
+          </PrivetRoute>
+        ),
+        loader: () => fetch("./data/products.json"),
+      },
+      {
+        path: "/sent-proposal",
+        element: (
+          <PrivetRoute>
+            <SentProposal />
+          </PrivetRoute>
+        ),
+      },
+      {
+        path: "/about",
+        element: (
+          <PrivetRoute>
+            <About />
+          </PrivetRoute>
+        ),
       },
     ],
   },

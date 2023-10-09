@@ -7,7 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  updateCurrentUser,
+  //   updateCurrentUser,
 } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 export const AuthContext = createContext(null);
