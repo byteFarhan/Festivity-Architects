@@ -22,28 +22,31 @@ const ProductDetailes = () => {
     <div className="">
       <Navbar />
       {/* <Hero /> */}
-      <div className="max-w-[1400px] mx-5 lg:mx-auto rounded-md font-work-sans  my-16 shadow-md md:font-medium">
+      <div
+        data-aos="fade-up"
+        className="max-w-[1400px] mx-5 lg:mx-auto rounded-md font-work-sans  my-16 shadow-md md:font-medium"
+      >
         <div className="relative">
           <img
             src={img}
             alt=""
             className="w-full rounded-t-md lg:h-[800px] mx-auto object-cover"
           />
-          <div className="absolute bottom-0 right-0 w-full bg-pink-100 p-2  md:p-10">
+          <div className="absolute bottom-0 right-0 w-full p-2 bg-pink-100 md:p-10">
             <Link to={"/sent-proposal"}>
-              <button className="btn bg-pink-500 hover:bg-pink-600 border-none text-white">
+              <button className="text-white bg-pink-500 border-none btn hover:bg-pink-600">
                 Sent proposal
               </button>
             </Link>
           </div>
         </div>
-        <div className=" p-5 lg:p-10 space-y-3">
-          <h2 className="lg:text-3xl text-xl md:text-2xl font-semibold">
+        <div className="p-5 space-y-3 lg:p-10">
+          <h2 className="text-xl font-semibold lg:text-3xl md:text-2xl">
             {product_title}
           </h2>
           <p className="">{lg_description}</p>
           <div>
-            <h1 className="lg:text-3xl text-xl md:text-2xl font-semibold mb-3">
+            <h1 className="mb-3 text-xl font-semibold lg:text-3xl md:text-2xl">
               Our Services
             </h1>
             {services?.map((service, idx) => (

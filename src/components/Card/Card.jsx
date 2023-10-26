@@ -4,17 +4,17 @@ const Card = ({ data }) => {
   const { title, img, description, id } = data || {};
   return (
     <>
-      <div className="  flex font-work-sans flex-col rounded-md bg-pink-100 lg:bg-white lg:shadow-md bg-clip-border text-gray-700">
+      <div className="flex flex-col text-gray-700 bg-pink-100 rounded-md font-work-sans lg:bg-white lg:shadow-md bg-clip-border">
         <img
           src={img}
           alt="img-blur-shadow"
           className="object-cover h-[385px] w-full rounded-t-md "
         />
 
-        <div className="p-6 flex-grow">
-          {/* <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"> */}
+        <div className="flex-grow p-6">
+          {/* <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"> */}
           <h5 className="mb-2 text-xl font-semibold ">{title}</h5>
-          <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+          <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
             {description}
           </p>
         </div>
